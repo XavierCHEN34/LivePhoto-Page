@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=0.2">
+  <meta charset="utf-8">
+  <meta name="description"
+        content="LivePhotp">
+  <meta name="keywords" content="Image Animation, Video Generation">
+  <title>LivePhoto</title>
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+
+
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/Logo.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">
+            <img src="./static/images/Logo2.png" alt="图标描述" style="width: 80px; height: 80px; vertical-align: middle; margin-right: 0px; position: relative; top: -8px;">
+            LivePhoto: Real Image Animation with Text-guided Motion Control
+          </h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://xavierchen34.github.io/">Xi Chen</a><sup>1</sup></a>&nbsp</a>&nbsp  
+            </span>
+            <span class="author-block">
+              <a href="https://openreview.net/profile?id=~Zhiheng_Liu1">Zhiheng Liu</a><sup>2</sup></a>&nbsp</a>&nbsp    
+            </span>
+            <span class="author-block">
+              <a href="https://openreview.net/profile?id=~Mengting_Chen1">Mengting Chen</a><sup>2</sup></a>&nbsp</a>&nbsp    
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com.hk/citations?user=mZwJLeUAAAAJ&hl=zh-CN">Yutong Feng</a><sup>2</sup></a>&nbsp</a>&nbsp    
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?hl=zh-CN&user=8zksQb4AAAAJ&view_op=list_works&sortby=pubdate">Yu Liu</a><sup>2</sup></a>&nbsp</a>&nbsp    
+            </span>
+            <span class="author-block">
+              <a href="https://shenyujun.github.io/">Yujun Shen</a><sup>3</sup></a>&nbsp</a>&nbsp    
+            </span>
+            <span class="author-block">
+              <a href="https://hszhao.github.io/">Hengshuang Zhao</a><sup>1</sup>  
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>The University of Hong Kong</a>&nbsp</a>&nbsp  </span>
+            <span class="author-block"><sup>2</sup>Alibaba Group</a>&nbsp</a>&nbsp  </span>
+            <span class="author-block"><sup>3</sup>Ant Group</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=   "https://github.com/XavierCHEN34/LivePhoto"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/XavierCHEN34/LivePhoto"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Demo</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://github.com/XavierCHEN34/LivePhoto"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/XavierCHEN34/LivePhoto"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+          <div class="gif-grid-6">
+            <!-- 第1行 -->
+            <div class="item image-item">
+              <p class="gif-caption-small">Reference Image</p>
+              <img src="./generate_images/Gallery_new/1.png" alt="image">
+            </div>
+            <div class="item item-steve">
+              <p class="gif-caption-small">"*hair flying in the wind."</p>
+              <img src="./generate_images/Gallery_new/1-The-woman-with-hair-flying-in-the-wind.gif" alt="image">
+            </div>
+            <div class="item item-steve">
+              <p class="gif-caption-small">Reference Image</p>
+              <img src="./generate_images/Gallery_new/6.png" alt="image">
+            </div>
+            <div class="item item-steve">
+              <p class="gif-caption-small">"The panda is eating bamboo."</p>
+              <img src="./generate_images/Gallery_new/6-The-panda-is-eating bamboo.gif" alt="image">
+            </div>
+            <div class="item image-item">
+              <p class="gif-caption-small">Reference Image</p>
+              <img src="./generate_images/Gallery_new/4.png" alt="image">
+            </div>
+            <div class="item item-steve">
+              <p class="gif-caption-small">"The minion is jumping."</p>
+              <img src="./generate_images/Gallery_new/4-The-minion-is-jumping.gif" alt="image">
+            </div>
+
+            <!-- 第2行 -->
+            <div class="item image-item">
+              <p class="gif-caption-small">Reference Image</p>
+              <img src="./generate_images/Gallery_new/10.png" alt="image">
+            </div>
+            <div class="item item-steve">
+              <p class="gif-caption-small">"The candles burn fast."</p>
+              <img src="./generate_images/Gallery_new/10-the-candles-burn-fast.gif" alt="image">
+            </div>
+            <div class="item item-steve">
+              <p class="gif-caption-small">Reference Image</p>
+              <img src="./generate_images/Gallery_new/11.png" alt="image">
+            </div>
+            <div class="item item-steve">
+              <p class="gif-caption-small">"Pouring water into the glass."</p>
+              <img src="./generate_images/Gallery_new/11-Pouring-water-into-the-glass..gif" alt="image">
+            </div>
+            <div class="item item-steve">
+              <p class="gif-caption-small">Reference Image</p>
+              <img src="./generate_images/Gallery_new/12.png" alt="image">
+            </div>
+            <div class="item item-steve">
+              <p class="gif-caption-small">"The fire is burning."</p>
+              <img src="./generate_images/Gallery_new/12-The-fire-is-burning-on-the-wood..gif" alt="image">
+            </div>
+
+            <!-- 第3行 -->
+            <div class="item image-item">
+              <p class="gif-caption-small">Reference Image</p>
+              <img src="./generate_images/Gallery_new/7.png" alt="image">
+            </div>
+            <div class="item item-steve">
+              <p class="gif-caption-small">"* camera from right to left."</p>
+              <img src="./generate_images/Gallery_new/7-Green-apple-camera-from-right-to-left.gif" alt="image">
+            </div>
+            <div class="item item-steve">
+              <p class="gif-caption-small">Reference Image</p>
+              <img src="./generate_images/Gallery_new/8.png" alt="image">
+            </div>
+            <div class="item item-steve">
+              <p class="gif-caption-small">"* camera turns around."</p>
+              <img src="./generate_images/Gallery_new/8-grass stacks, camera turns around.gif" alt="image">
+            </div>
+            <div class="item item-steve">
+              <p class="gif-caption-small">Reference Image</p>
+              <img src="./generate_images/Gallery_new/9.png" alt="image">
+            </div>
+            <div class="item item-steve">
+              <p class="gif-caption-small">"* camera-zooms-in."</p>
+              <img src="./generate_images/Gallery_new/9-A-pair-of-shoes,-camera-zooms-in-from-far-to-near.gif" alt="image">
+            </div>
+
+            <!-- 第4行 -->
+            <div class="item item-steve">
+              <p class="gif-caption-small">Reference Image</p>
+              <img src="./generate_images/Gallery_new/14.png" alt="image">
+            </div>
+            <div class="item item-steve">
+              <p class="gif-caption-small">"Snowflakes falling *."</p>
+              <img src="./generate_images/Gallery_new/14-Snowflakes-falling-from-the-branches.gif" alt="image">
+            </div>
+            <div class="item image-item">
+              <p class="gif-caption-small">Reference Image</p>
+              <img src="./generate_images/Gallery_new/13.png" alt="image">
+            </div>
+            <div class="item item-steve">
+              <p class="gif-caption-small">"Wind blows the sunflowers."</p>
+              <img src="./generate_images/Gallery_new/13-The-wind-blows-the-sunflowers.gif" alt="image">
+            </div>
+            <div class="item item-steve">
+              <p class="gif-caption-small">Reference Image</p>
+              <img src="./generate_images/Gallery_new/15.png" alt="image">
+            </div>
+            <div class="item item-steve">
+              <p class="gif-caption-small">"Fireworks bloom in the sky."</p>
+              <img src="./generate_images/Gallery_new/15-Fireworks-bloom-in-the-sky.gif" alt="image">
+            </div>
+
+  </div>
+</section>
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Despite the recent progress in text-to-video generation, existing studies usually overlook the issue that only spatial contents but not temporal motions in synthesized videos are under the control of text. 
+            Towards such a challenge, this work presents a practical system, named <b>LivePhoto</b>, which allows users to animate an image of their interest with text descriptions. 
+            We first establish a strong baseline that helps a well-learned text-to-image generator (i.e., Stable Diffusion) take an image as a further input. 
+            We then equip the improved generator with a motion module for temporal modeling and propose a carefully designed training pipeline to better link texts and motions. 
+            In particular, considering the facts that (1) text can only describe motions roughly (e.g., regardless of the moving speed) and (2) text may include both content and motion descriptions, we introduce a motion intensity estimation module as well as a text re-weighting module to reduce the ambiguity of text-to-motion mapping. 
+            Empirical evidence suggests that our approach is capable of well decoding motion-related textual instructions into videos, such as actions, camera movements, or even conjuring new contents from thin air (e.g., pouring water into an empty glass). 
+            Interestingly, thanks to the proposed intensity learning mechanism, our system offers users an additional control signal (i.e., the motion intensity) besides text for video customization.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="text-align: center;">Motion Control with Text Instructions</h2>
+          <div class="content has-text-justified">
+            <p>
+              Our unique feature is the precise motion control through text instructions. Furthermore, users have the ability to customize these motions by setting different  "motion intensities".
+            </p>
+          </div>
+
+          <div class="gif-grid">
+            <!-- 第1行 -->
+            <div class="item image-item">
+              <p class="gif-caption-small">Reference image</p>
+              <img src="./generate_images/Control/Lecun/LivePhoto.png" alt="image">
+            </div>
+            <div class="item item-steve">
+              <p class="gif-caption-small">"The man smiles."</p>
+              <img src="./generate_images/Control/Lecun/The-man-smiles-intens2.gif" alt="GIF 1" width="100%">
+            </div>
+            <div class="item item-steve">
+              <p class="gif-caption-small">"The man gives a thumbs-up."</p>
+              <img src="./generate_images/Control/Lecun/2-The-man-gives-a-thumb-up..gif" alt="GIF 2" width="100%">
+            </div>
+            <div class="item item-steve">
+              <p class="gif-caption-small">"The man is drinking beer."</p>
+              <img src="./generate_images/Control/Lecun/This-man-is-drinking-beer2.gif" alt="GIF 3" width="100%">
+            </div>
+            <!-- 第2行 -->
+            <div class="item image-item">
+              <p class="gif-caption-intens">Motion Intensity: 2</p>
+              <img src="./generate_images/Control/Lecun/The-man-smiles-intens2.gif" alt="image">
+              
+            </div>
+            <div class="item item-steve">
+              <p class="gif-caption-intens">Motion Intensity: 5</p>
+              <img src="./generate_images/Control/Lecun/The-man-smiles-intens5.gif" alt="GIF 1" width="100%">
+              
+            </div>
+            <div class="item item-steve">
+              <p class="gif-caption-intens">Motion Intensity: 3</p>
+              <img src="./generate_images/Control/Lecun/2-The-man-gives-a-thumb-up..gif" alt="GIF 2" width="100%">
+              
+            </div>
+            <div class="item item-steve">
+              <p class="gif-caption-intens">Motion Intensity: 7</p>
+              <img src="./generate_images/Control/Lecun/The-man-gives-a-thumbs-up-intens72.gif" alt="GIF 3" width="100%">
+            </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="text-align: center;">Comparisons with Existing Alternatives</h2>
+          <div class="content has-text-justified">
+            <p>
+              We conducted a comparative analysis of LivePhoto with GEN-2 and Pikalabs, specifically using their versions as of November 2023. 
+              The generated videos are presented sequentially from left to right, originating from GEN-2, Pikalabs, and then LivePhoto. 
+              Notably, LivePhoto demonstrates superior performance in text-guided motion control.
+            </p>
+          </div>
+
+          <div class="gif-grid">
+            <!-- 第1行 -->
+            <div class="full-width-text">
+              <p>"Pikachu is dancing happily."</p>
+            </div>
+            <div class="item image-item">
+              <img src="./generate_images/Compare/Pikachu-is-dancing-happily/LivePhoto.png" alt="image">
+              <p class="gif-caption">Reference Image</p>
+            </div>
+            <div class="item item-steve">
+              <img src="./generate_images/Compare/Pikachu-is-dancing-happily/GEN-2.gif" alt="GIF 1" width="100%">
+              <p class="gif-caption">GEN-2</p>
+            </div>
+            <div class="item item-steve">
+              <img src="./generate_images/Compare/Pikachu-is-dancing-happily/Pikalabs.gif" alt="GIF 2" width="100%">
+              <p class="gif-caption">Pikalabs</p>
+            </div>
+            <div class="item item-steve">
+              <img src="./generate_images/Compare/Pikachu-is-dancing-happily/LivePhoto.gif" alt="GIF 3" width="100%">
+              <p class="gif-caption">LivePhoto</p>
+            </div>
+            <!-- 第1行 -->
+            <div class="full-width-text">
+              <p>"Kung Fu Panda is practicing Tai Chi."</p>
+            </div>
+            <div class="item image-item">
+              <img src="./generate_images/Compare/Kung-Fu-Panda-is-practicing-Tai-Chi/LivePhoto.png" alt="image">
+              <p class="gif-caption">Reference Image</p>
+            </div>
+            <div class="item item-steve">
+              <img src="./generate_images/Compare/Kung-Fu-Panda-is-practicing-Tai-Chi/GEN-2.gif" alt="GIF 1" width="100%">
+              <p class="gif-caption">GEN-2</p>
+            </div>
+            <div class="item item-steve">
+              <img src="./generate_images/Compare/Kung-Fu-Panda-is-practicing-Tai-Chi/Pikalabs.gif" alt="GIF 2" width="100%">
+              <p class="gif-caption">Pikalabs</p>
+            </div>
+            <div class="item item-steve">
+              <img src="./generate_images/Compare/Kung-Fu-Panda-is-practicing-Tai-Chi/LivePhoto.gif" alt="GIF 3" width="100%">
+              <p class="gif-caption">LivePhoto</p>
+            </div>
+
+            <!-- 第4行 -->
+            <div class="full-width-text">
+              <p>"The little yellow baby dinosaur is waving its hand."</p>
+            </div>
+            <div class="item image-item">
+              <img src="./generate_images/Compare/The-little-yellow-baby-dinosaur-is-waving-its-hand/LivePhoto.png" alt="image">
+              <p class="gif-caption">Reference Image</p>
+            </div>
+            <div class="item item-steve">
+              <img src="./generate_images/Compare/The-little-yellow-baby-dinosaur-is-waving-its-hand/GEN-2.gif" alt="GIF 1" width="100%">
+              <p class="gif-caption">GEN-2</p>
+            </div>
+            <div class="item item-steve">
+              <img src="./generate_images/Compare/The-little-yellow-baby-dinosaur-is-waving-its-hand/Pikalabs.gif" alt="GIF 2" width="100%">
+              <p class="gif-caption">Pikalabs</p>
+            </div>
+            <div class="item item-steve">
+              <img src="./generate_images/Compare/The-little-yellow-baby-dinosaur-is-waving-its-hand/LivePhoto.gif" alt="GIF 3" width="100%">
+              <p class="gif-caption">LivePhoto</p>
+            </div>
+
+            <!-- 第2行 -->
+            <div class="full-width-text">
+              <p>"The volcano emits thick smoke from its crater."</p>
+            </div>
+            <div class="item image-item">
+              <img src="./generate_images/Compare/The-volcano-emits-thick-smoke-from-its-crater/LivePhoto.png" alt="image">
+              <p class="gif-caption">Reference Image</p>
+            </div>
+            <div class="item item-steve">
+              <img src="./generate_images/Compare/The-volcano-emits-thick-smoke-from-its-crater/GEN-2.gif" alt="GIF 1" width="100%">
+              <p class="gif-caption">GEN-2</p>
+            </div>
+            <div class="item item-steve">
+              <img src="./generate_images/Compare/The-volcano-emits-thick-smoke-from-its-crater/Pikalabs.gif" alt="GIF 2" width="100%">
+              <p class="gif-caption">Pikalabs</p>
+            </div>
+            <div class="item item-steve">
+              <img src="./generate_images/Compare/The-volcano-emits-thick-smoke-from-its-crater/LivePhoto.gif" alt="GIF 3" width="100%">
+              <p class="gif-caption">LivePhoto</p>
+            </div>
+
+
+            <!-- 第3行 -->
+            <div class="full-width-text">
+              <p>"Lightning and thunder in the night sky."</p>
+            </div>
+            <div class="item image-item">
+              <img src="./generate_images/Compare/Lightning-and-thunder-in-the-night-sky/LivePhoto.png" alt="image">
+              <p class="gif-caption">Reference Image</p>
+            </div>
+            <div class="item item-steve">
+              <img src="./generate_images/Compare/Lightning-and-thunder-in-the-night-sky/GEN-2.gif" alt="GIF 1" width="100%">
+              <p class="gif-caption">GEN-2</p>
+            </div>
+            <div class="item item-steve">
+              <img src="./generate_images/Compare/Lightning-and-thunder-in-the-night-sky/Pikalabs.gif" alt="GIF 2" width="100%">
+              <p class="gif-caption">Pikalabs</p>
+            </div>
+            <div class="item item-steve">
+              <img src="./generate_images/Compare/Lightning-and-thunder-in-the-night-sky/LivePhoto.gif" alt="GIF 3" width="100%">
+              <p class="gif-caption">LivePhoto</p>
+            </div>
+
+            <!-- 第5行 -->
+            <div class="full-width-text">
+              <p>"Fire burns on the grass stack."</p>
+            </div>
+            <div class="item image-item">
+              <img src="./generate_images/Compare/Fire-burns-on-the-grass-stack/LivePhoto.png" alt="image">
+              <p class="gif-caption">Reference Image</p>
+            </div>
+            <div class="item item-steve">
+              <img src="./generate_images/Compare/Fire-burns-on-the-grass-stack/GEN-2.gif" alt="GIF 1" width="100%">
+              <p class="gif-caption">GEN-2</p>
+            </div>
+            <div class="item item-steve">
+              <img src="./generate_images/Compare/Fire-burns-on-the-grass-stack/Pikalab.gif" alt="GIF 2" width="100%">
+              <p class="gif-caption">Pikalabs</p>
+            </div>
+            <div class="item item-steve">
+              <img src="./generate_images/Compare/Fire-burns-on-the-grass-stack/LivePhoto.gif" alt="GIF 3" width="100%">
+              <p class="gif-caption">LivePhoto</p>
+            </div>
+
+
+            <!-- 第5行 -->
+            <div class="full-width-text">
+              <p>"Dew dripping from the leaves."</p>
+            </div>
+            <div class="item image-item">
+              <img src="./generate_images/Compare/Dew-dripping-from-the-leaves/LivePhoto.png" alt="image">
+              <p class="gif-caption">Reference Image</p>
+            </div>
+            <div class="item item-steve">
+              <img src="./generate_images/Compare/Dew-dripping-from-the-leaves/GEN-2.gif" alt="GIF 1" width="100%">
+              <p class="gif-caption">GEN-2</p>
+            </div>
+            <div class="item item-steve">
+              <img src="./generate_images/Compare/Dew-dripping-from-the-leaves/Pikalabs.gif" alt="GIF 2" width="100%">
+              <p class="gif-caption">Pikalabs</p>
+            </div>
+            <div class="item item-steve">
+              <img src="./generate_images/Compare/Dew-dripping-from-the-leaves/LivePhoto.gif" alt="GIF 3" width="100%">
+              <p class="gif-caption">LivePhoto</p>
+            </div>
+          </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="text-align: center;">Pipeline</h2>
+        <div class="content has-text-justified">
+          <p>
+            Overall pipeline of LivePhoto is shown below, besides taking the reference image and text as input, LivePhoto leverages the motion intensity
+            as a supplementary condition. The image and the motion intensity (from level 1 to 10) are obtained from the ground truth video during
+            training and customized by users during inference. The reference latent is first extracted as local content guidance. We concatenate it
+            with the noise latent, a frame embedding, and the intensity embedding. This 10-channel tensor is fed into the UNet for denoising. During
+            inference, we use the inversion of the reference latent instead of the pure Gaussian to provide content priors. At the top, a content encoder
+            extracts the visual tokens to provide global content guidance. At the bottom, we introduce text re-weighting, which learns to emphasize
+            the motion-related part of the text embedding for better text-motion mapping. The visual and textual tokens are injected into the UNet via
+            cross-attention. For the UNet, we freeze the pre-trained stable diffusion and insert motion modules to capture the inter-frame relations.
+            Symbols of flames and snowflakes denote trainable and frozen parameters respectively.
+          </p>
+        </div>
+
+        <div class="image-area">
+          <img src="./static/images/pipeline.png" alt="pipeline" width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section"  style="margin-top: 0; padding-top: 30px;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3" style="text-align: center;">Video Introduction</h2>
+        <video poster="" id="ade" autoplay controls muted loop playsinline height="10%">
+          <source src="./generate_images/PPT.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{chen2023livephoto,
+      title={LivePhoto: Real Image Animation with Text-guided Motion Control},
+      author={Chen, Xi and Liu, Zhiheng and Chen, Mengting and Feng, Yutong and Shen, Yujun and Zhao, Hengshuang},
+      journal={arXiv preprint},
+      year={2023}
+    }</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/XavierCHEN34/LivePhoto" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="content">
+        <p>
+          The template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
